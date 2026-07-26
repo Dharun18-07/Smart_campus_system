@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Campus Resource Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SmartCampus <span>Bookings</span></div>
+        <ul class="nav-links">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">My Reservations</a></li>
+            <li><a href="#">Waitlist</a></li>
+            <li><a href="#" class="btn-login">Logout (Student)</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-section">
+        <h1>Find and Book Campus Resources</h1>
+        <p>Real-time availability for classrooms, labs, and equipment.</p>
+        
+        <div class="search-bar">
+            <select>
+                <option>All Resources</option>
+                <option>Classrooms</option>
+                <option>Laboratories</option>
+                <option>Study Rooms</option>
+            </select>
+            <input type="date">
+            <input type="time">
+            <button class="btn-search">Search Availability</button>
+        </div>
+    </header>
+
+    <main class="resource-container">
+        <h2>Available Resources</h2>
+        <div class="grid">
+            <!-- Resource Card 1 -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Lab 304 - Computer Science</h3>
+                    <span class="status available">Available</span>
+                </div>
+                <p>Capacity: 60 | High-performance computing lab equipped with PostgreSQL & Java dev environments.</p>
+                <button class="btn-book">Book Now</button>
+            </div>
+
+            <!-- Resource Card 2 -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Study Room B</h3>
+                    <span class="status waitlist">Waitlist Only</span>
+                </div>
+                <p>Capacity: 6 | Quiet study room with whiteboard and projector.</p>
+                <button class="btn-waitlist">Join Waitlist</button>
+            </div>
+
+            <!-- Resource Card 3 -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Lecture Hall 1</h3>
+                    <span class="status booked">Conflict / Booked</span>
+                </div>
+                <p>Capacity: 120 | Main hall for seminars and large classes.</p>
+                <button class="btn-disabled" disabled>Unavailable</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Amrita School of Computing. Group C5 - DBMS Project.</p>
+    </footer>
+</body>
+</html>
