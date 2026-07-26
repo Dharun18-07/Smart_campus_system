@@ -1,1 +1,1 @@
-# Smart_campus_system
+#  Smart Campus Resource Booking System
